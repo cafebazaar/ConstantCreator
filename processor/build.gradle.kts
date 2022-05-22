@@ -2,7 +2,7 @@ val kspVersion: String by project
 
 plugins {
     kotlin("jvm")
-    id("maven-publish")
+    `maven-publish`
 }
 
 group = "com.farsitel.bazaar.constant-creator.processor"
