@@ -7,3 +7,12 @@ allprojects {
         mavenCentral()
     }
 }
+
+subprojects {
+    if (plugins.hasPlugin("maven-publish")) {
+        java {
+            withSourcesJar()
+            withJavadocJar()
+        }
+    }
+}
