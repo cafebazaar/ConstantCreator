@@ -11,8 +11,18 @@ publishing {
         create<MavenPublication>("maven") {
             groupId = project.group as String
             version = project.version as String
+            artifactId = "annotations"
 
             from(components["java"])
         }
+    }
+}
+
+tasks {
+    compileKotlin {
+        kotlinOptions.jvmTarget = "1.8"
+    }
+    compileTestKotlin {
+        kotlinOptions.jvmTarget = "1.8"
     }
 }
