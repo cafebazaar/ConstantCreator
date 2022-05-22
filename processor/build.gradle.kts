@@ -7,8 +7,6 @@ plugins {
 group = "com.farsitel.bazaar.constant-creator.processor"
 version = "0.1"
 
-apply(from = "../publish-helper.gradle")
-
 java {
     withJavadocJar()
     withSourcesJar()
