@@ -5,7 +5,7 @@ plugins {
 
 dependencies {
     implementation(kotlin("stdlib"))
-    implementation(project(":library"))
+    implementation(project(":annotations"))
     ksp(project(":processor"))
 }
 

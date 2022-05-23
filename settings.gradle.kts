@@ -13,7 +13,7 @@ pluginManagement {
 
 rootProject.name = "ConstantCreator"
 
-include(":library")
+include(":annotations")
 include(":processor")
 include(":parentsample")
 include(":main")
