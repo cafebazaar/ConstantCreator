@@ -39,7 +39,7 @@ val MyAdapter_ViewConst = 65756129218
 
 You can change constant name suffix with `nameSuffix` parameter in `@HasConstant`(Defaults to _CONST).
 
-You can safely use the generated constants, anywhere.
+You can safely use the generated constants anywhere:
 
 ```kotlin 
 
