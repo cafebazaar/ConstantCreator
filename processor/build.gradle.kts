@@ -1,3 +1,5 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 val kspVersion: String by project
 
 plugins {
@@ -8,6 +10,12 @@ group = "com.farsitel.bazaar.constant-creator.processor"
 version = "0.1"
 
 apply(from = "$rootDir/publication.gradle.kts")
+
+val compileKotlin: KotlinCompile by tasks
+
+compileKotlin.kotlinOptions.freeCompilerArgs += listOf(
+    "-opt-in=kotlin.RequiresOptIn"
+)
 
 dependencies {
     implementation(kotlin("stdlib"))
