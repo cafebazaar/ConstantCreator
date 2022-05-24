@@ -85,4 +85,7 @@ dependencies {
 
 ## Contribution
 
-Any type of contribution includes bug fixes and adding new features are welcomed :) .
+Any type of contribution includes bug fixes and adding new features are welcomed ‌But priorities are:
+
+1. Implement a way to create multiple unique numbers series (Right now using `@HasConst` creates one series of unique constants)
+2. Finish `@HasEnumConstant` annotation processor to generate enum with constants for annotated classes.
